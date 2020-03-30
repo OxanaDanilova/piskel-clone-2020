@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  cursor: default;
+  font-family: Arial;
+}
+
+header {
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 2px 10px 9px #bbbbbb;
+  background-color: #2d2d2d;
+}
+
+.header {
+  margin-left: 40px;
+}
+
+header h1 {
+  font-size: 21px;
+  font-family: Arial;
+  margin: 11px;
+  color: #ffffff;
+}
+
+.login-panel {
+  display: flex;
+}
+
+.main-part {
+  display: flex;
+  background-color: #1d1d1d;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.screenshots {
+  margin-top: 50px;
+}
+
+.img-examples {
+  display: flex;
+  place-content: space-around;
+}
+
+.img-examples li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.img-examples li div {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+}
+
+.firstImg{
+  background-image: url('../images/firstImg.png');
+}
+
+.secondImg{
+  background-image: url('../images/secondImg.png');
+}
+
+.firstGif{
+  background-image: url('../images/example1.gif');
+}
+
+.img-item {
+  width: 600px;
+  height: 400px;
+}
+
+.overview {
+  color: white;
+  font-size: 40px;
+  display: flex;
+  place-content: space-around;
+}
+
+.anim-item {
+  width: 600px;
+  height: 400px;
+}
+
+.info-wrap {
+  width: 600px;
+  margin-top: 40px;
+}
+.info-wrap p + p {
+  font-size: 28px;
+  line-height: 60px;
+}
+
+.start {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.start-app,
+.sign-in,
+.sign-out {
+  background: gold;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.start-app {
+  height: 60px;
+  width: 150px;
+  font-size: 3.2em;
+}
+
+.sign-in,
+.sign-out {
+  height: 40px;
+  width: 140px;
+  font-size: 1.1em;
+  line-height: 18px;
+  align-self: center;
+
+}
+
+.sign-out {
+  display: none;
+}
+
+
+.user-data {
+  visibility: hidden;
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+  margin-right: 40px;
+}
+
+.user-name {
+  align-self: center;
+  color: #ffffff;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.description ul {
+  font-size: 25px;
+  margin-left: 35px;
+}
+
+.main-wrapper-temp {
+  display: none;
+}
+

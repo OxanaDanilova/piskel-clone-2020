@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="./gif.js"></script>
+    <script src="./gif.worker.js"></script>
+    <script src="./UPNG.js"></script>
+    <title>Piskel-clone</title>
+  </head>
+  <body id="body">
+    <header>
+      <div class="header"><h1>PISKEL</h1></div>
+      <div class="user-data">
+        <button class="sign-in">Sign in</button>
+        <button class="sign-out">Sign out</button>
+        <div class="user-avatar"></div>
+        <p class="user-name"></p>
+      </div>
+    </header>
+    <div class="main-wrapper">
+      <div class="main">
+        <div class="draw-instr">
+          <div class="wrap-instr">
+            <div class="pen selected">
+              <button type="button" class="pen-btn"></button>
+            </div>
+            <div class="eraser">
+              <button type="button" class="eraser-btn"></button>
+            </div>
+            <div class="rectangle">
+              <button type="button" class="rect-btn"></button>
+            </div>
+            <div class="circle">
+              <button type="button" class="circle-btn"></button>
+            </div>
+            <div class="stroke">
+              <button type="button" class="stroke-btn"></button>
+            </div>
+            <div class="mirrorPenX">
+              <button type="button" class="vert-mir-btn"></button>
+            </div>
+            <div class="mirrorPenY">
+              <button type="button" class="horiz-mir-btn"></button>
+            </div>
+            <div class="col-picker">
+              <button type="button" class="color-picker-btn"></button>
+            </div>
+            <div class="paint">
+              <button type="button" class="paint-btn"></button>
+            </div>
+
+            <div class="secondary-color">
+              <input
+                type="color"
+                name="color-sec"
+                class="sec-color"
+                value="#000000"
+              />
+            </div>
+            <div class="primary-color">
+              <input
+                type="color"
+                name="color"
+                id="color"
+                class="prim-color"
+                value="#ff0000"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="frames" id="frames">
+          <div class="frame current" draggable="true">
+            <div class="numb" id="numb">1</div>
+            <canvas
+              id="frame-item"
+              class="frame-item"
+              width="32"
+              height="32"
+            ></canvas>
+            <div class="delete" id="delete"></div>
+            <div class="copy"></div>
+          </div>
+          <button class="add-frame" id="add-frame">
+            <i class="fas fa-plus"></i>Add new frame
+          </button>
+        </div>
+        <div class="canvas-main-wrap">
+          <div class="canvas-main" id="canvas-main">
+            <canvas width="768px" height="768px" class="canvas-clone"></canvas>
+            <canvas width="768px" height="768px" class="canvas-draw"></canvas>
+          </div>
+        </div>
+
+        <div class="preview">
+          <div class="wrapper-can">
+            <canvas
+              id="canvas-preview"
+              class="canvas-preview"
+              width="200"
+              height="200"
+            ></canvas>
+          </div>
+
+          <div class="preview-control">
+            <span class="value">1 FPS</span>
+            <input
+              type="range"
+              name="fps"
+              min="1"
+              max="24"
+              step="1"
+              class="fps"
+              value="1"
+            />
+            <span class="fullscr">Full screen</span>
+          </div>
+          <div class="export">
+            <button class="exp-gif">Export as .gif</button>
+            <a href="" class="download-gif" download>Download as .gif</a>
+          </div>
+          <div class="export-apng">
+            <button class="exp-apng">Export as .apng</button>
+          </div>
+          <div class="canvas-sizes">
+            <div>Canvas sizes:</div>
+            <div class="wrap-sizes">
+              <label for="32">32x32</label>
+              <input type="radio" name="size" value="32" id="32" checked />
+              <label for="64">64x64</label>
+              <input type="radio" name="size" value="64" id="64" />
+              <label for="128">128x128</label>
+              <input type="radio" name="size" value="128" id="128" />
+            </div>
+          </div>
+          <div class="info">
+            <div class="wrap-info">
+              <p>Coordinates:</p>
+              <p>x</p>
+              <p>y</p>
+            </div>
+          </div>
+          <div class="pen-size-wrapper">
+            <p>Pen size:</p>
+            <div class="pen-sizes">
+              <label for="1">1</label>
+              <input type="radio" name="pen-size" value="1" id="1" checked />
+              <label for="2">2</label>
+              <input type="radio" name="pen-size" value="2" id="2" />
+              <label for="3">3</label>
+              <input type="radio" name="pen-size" value="3" id="3" />
+              <label for="4">4</label>
+              <input type="radio" name="pen-size" value="4" id="4" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

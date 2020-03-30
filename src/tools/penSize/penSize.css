@@ -1,0 +1,24 @@
+.pen-size-wrapper {
+  width: 220px;
+  height: 80px;
+  margin: 5px auto;
+  background-color: #333333;
+  color: #aaa;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.pen-size-wrapper p {
+  margin: 5px;
+}
+
+.pen-sizes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
+

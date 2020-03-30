@@ -1,0 +1,24 @@
+.pen-btn {
+  height: 46px;
+  width: 46px;
+  display: flex;
+  border: none;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: center;
+  margin-bottom: 1px;
+  cursor: pointer;
+}
+
+.pen {
+  width: 46px;
+  height: 46px;
+}
+
+.pen-btn {
+  background-image: url(../../images/pen.png);
+}
+
+.selected {
+  border: 3px solid gold;
+}

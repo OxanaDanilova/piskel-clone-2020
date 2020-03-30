@@ -1,0 +1,24 @@
+.stroke-btn {
+  height: 46px;
+    width: 46px;
+    display: flex;
+    border: none;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: center;
+    margin-bottom: 1px;
+    cursor: pointer;
+}
+
+.stroke {
+  width: 46px;
+  height: 46px;
+}
+
+.selected {
+  border: 3px solid gold;
+}
+
+.stroke-btn {
+  background-image: url(../../images/stroke.png);
+}
